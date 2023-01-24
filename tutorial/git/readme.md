@@ -24,3 +24,14 @@ git repos operation
 > git status ---check your repos status.
 
 </details>
+
+<details>
+<summary>
+
+how to fork a branch?
+
+</summary>
+
+[click here](https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/)
+
+</details>
