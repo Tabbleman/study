@@ -32,6 +32,11 @@ how to fork a branch?
 
 </summary>
 
-[click here](https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/)
+1. first step: create a fork ![create fork](../../images/fork.png)
+2. make some change on the repos forked from the master branch
+3. add a pull request on your local ![pull request](../../images/pull-request.png)
+
+
+[Citation](https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/)
 
 </details>
