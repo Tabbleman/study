@@ -173,3 +173,98 @@ int main() {
 
 
 </details>
+
+
+<details>
+<summary>
+
+[1162 Postfix Expression](https://pintia.cn/problem-sets/994805342720868352/exam/problems/1478635599577522176)
+
+</summary>
+
+> For each op, l_child, r_child, mark l_child and r_child are visited in the st array. Get the root node by traversing the st array.
+
+```cpp
+
+/*****Code By Cheems*****/
+#include <bits/stdc++.h>
+/**********-_-***********/
+using namespace std;
+const int N = 110, INF = 0x3f3f3f3f, mod = 1e9 + 7;
+typedef long long ll;
+typedef pair<int, int> PII;
+
+/*variables*/
+int l[N], r[N], st[N], n;
+string op[N];
+int root = 1;
+/*functions*/
+void sol(int x){
+	cout << "(";
+	if(l[x] * r[x] > 1){
+		sol(l[x]);
+		sol(r[x]);
+	}
+	cout << op[x];
+	if(l[x] * r[x] < 0)sol(r[x]);
+	cout << ")";
+	return ;
+	
+}
+
+/*****main******/
+int main(int argc, char** argv){
+	cin.tie(0);
+	ios::sync_with_stdio(false);
+// 	freopen("c:\\tmp\\tmp.in", "r", stdin);
+	cin >> n;
+	memset(st, 0, sizeof st);
+	for(int i = 1; i <= n; i ++){
+		cin >> op[i] >> l[i] >> r[i];
+		st[l[i]] = st[r[i]] = 1;
+	}
+	while(st[root]) root++;
+	sol(root);	
+	
+	
+
+	return 0;
+}
+
+```
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
