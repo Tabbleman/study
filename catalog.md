@@ -69,7 +69,6 @@
 |   |           `-- 8
 |   |-- atcoder
 |   |-- codeforce
-|   |-- icourse
 |   |-- leetcode
 |   |   `-- contest
 |   |       `-- biweekly-96
@@ -113,5 +112,5 @@
     |-- git
     `-- latex
 
-112 directories
+111 directories
  ```` 
