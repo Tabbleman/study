@@ -28,11 +28,11 @@ inline void gitpush(){
     char buffer[10010], add_comment;
     //update catalog tree:-)
     update_catalog();
-    system("git add ../.");
+    system("git add ../. >> ../loginfo/log");
     printf("input comment(less than 10010 char):\n");
     comment = get_comment();
     if(comment[0] == 'n')comment = default_comment;
-    sprintf(buffer, "git commit -m \"%s\"", comment.c_str());
+    sprintf(buffer, "git commit -m \"%s\" >> ../loginfo/log", comment.c_str());
     // printf("%s\n", buffer);
     system(buffer);
     system("git push >> ../loginfo/log");
