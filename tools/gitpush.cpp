@@ -24,7 +24,7 @@ inline string get_comment()
 }
 
 inline void gitpush(){
-    string comment, default_comment = "update file";
+    string comment, default_comment = "auto push";
     char buffer[10010], add_comment;
     //update catalog tree:-)
     update_catalog();
@@ -35,7 +35,7 @@ inline void gitpush(){
     sprintf(buffer, "git commit -m \"%s\"", comment.c_str());
     // printf("%s\n", buffer);
     system(buffer);
-    system("git push");
+    system("git push >> ../loginfo/log");
 }
 int main(int argc, char **argv)
 {
