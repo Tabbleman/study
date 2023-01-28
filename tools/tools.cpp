@@ -23,10 +23,11 @@ using namespace std;
 inline void show_usage()
 {
     printf("Usage:\n"
-           "\t-p git push\n"
-           "\t-u git pull\n"
-           "\t-a add readme file\n"
-           "\t-c <src> <dst>copy other folder's structure\n");
+           "\t\t-p git push\n"
+           "\t\t-u git pull\n"
+           "\t\t-a add readme file\n"
+           "\t\t-c <src> <dst>copy other folder's structure\n"
+           "\t\t-q quick push comment=\"quick push\"");
     return;
 }
 int main(int argc, char **argv)
@@ -50,6 +51,9 @@ int main(int argc, char **argv)
             break;
         case 'c':
             printf("to be continue...\n");
+            break;
+        case 'q':
+            system("git add ../. && git commit -m \"quick push\" && git push ");
             break;
         case 'u':
             //update from git repos
