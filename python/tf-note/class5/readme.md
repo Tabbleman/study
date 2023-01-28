@@ -56,10 +56,7 @@ $$
 
 ---
 
-$$
-
-X_i^k = \gamma_{k}*H_i^{'k} + \beta_{k}
-$$
+$$X_i^k = \gamma_{k}*H_i^{'k} + \beta_{k}$$
 
 反向传播时
 $\gamma$,
