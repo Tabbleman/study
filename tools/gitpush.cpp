@@ -33,8 +33,10 @@ inline void gitpush(){
     comment = get_comment();
     if(comment[0] == 'n')comment = default_comment;
     sprintf(buffer, "git commit -m \"%s\" >> ../loginfo/log", comment.c_str());
-    // printf("%s\n", buffer);
+    printf("%s\n", buffer);
     system(buffer);
+    return ;
+
     system("git push >> ../loginfo/log");
 }
 int main(int argc, char **argv)
