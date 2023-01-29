@@ -162,7 +162,7 @@ LeNet
 ![alt](../../../images/LeNet.png)
 
 第一层 | 第二层 | 第三层
-----------------------
+---|---|---
 test | test2 | test3
 
 </details>
