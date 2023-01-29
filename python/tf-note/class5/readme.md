@@ -17,7 +17,7 @@ input_shape=(高，宽，通道数)
 )
 
 #e.g.
-model = tf.keras.models.Sequential(
+model = tf.keras.models.Sequential([
 Conv2d(6,5,padding="valid",activation='relu'),
 MaxPool2D(2,2),
 Conv2d(6,(3,2),padding="valid",activation='sigmoid'),
@@ -28,7 +28,7 @@ MaxPool2D(pool_size=(2,2),strides=2),
 Flatten(),
 Dense(10,activation='softmax')
 
-)
+])
 ```
 </details>
 <!-------------------->
@@ -62,13 +62,13 @@ $\beta$
 
 ```python
 #e.g.
-model = tf.keras.models.Sequential(
+model = tf.keras.models.Sequential([
 Conv2d(6,5,padding="valid",activation='relu'),
 BatchNormalization(),
 Activation('relu'),
 MaxPool2D(pool_size=(2,2),strides=2,padding='same'),
 Dropout(0.2)
-)
+])
 ```
 </details>
 
@@ -80,7 +80,87 @@ Dropout(0.2)
 
 </summary>
 
- 
+池化用于减少特征数据量。有两种池化方法
+1. 最大池化
+2. 均值池化
+
+```python
+#tf 描述最大池化
+tf.keras.layers.MaxPool2D(
+pool_size=池化核尺寸,填入整数则为正方形,否则以元组形式给出核高和核宽,
+strides=池化步长或者(纵向步长，横向步长)，默认为pool_size，
+padding='valid'or'same'(全零填充)
+
+)
+
+#tf 描述均值池化
+tf.keras.layers.AveragePool2D(
+pool_size=池化核尺寸,填入整数则为正方形,否则以元组形式给出核高和核宽,
+strides=池化步长或者(纵向步长，横向步长)，默认为pool_size，
+padding='valid'or'same'(全零填充)
+)
+
+#e.g.
+model = tf.keras.models.Sequential([
+Conv2d(6,5,padding="valid",activation='relu'),
+BatchNormalization(),
+Activation('relu'),
+#->
+MaxPool2D(pool_size=(2,2),strides=2,padding='same'),
+Dropout(0.2)
+])
+```
 
 </details>
+
+<details>
+<summary>
+
+舍弃(Dropout)
+
+</summary>
+
+防止过拟合，舍弃一定比例数据
+```python
+#e.g.
+model = tf.keras.models.Sequential([
+Conv2d(6,5,padding="valid",activation='relu'),
+BatchNormalization(),
+Activation('relu'),
+MaxPool2D(pool_size=(2,2),strides=2,padding='same'),
+#->
+Dropout(0.2)
+])
+```
+
+</details>
+
+<details>
+<summary>
+
+卷积神经网络
+
+</summary>
+
+* 卷积      (C onvolutional)
+* 批标准化  (B atch Normalization)
+* 激活      (A ctivation)
+* 池化      (P ooling)
+* 舍弃      (D ropout)
+--- 
+* 全连接    (F c)
+
+</details>
+
+<details>
+<summary>
+
+LeNet
+
+</summary>
+
+
+</details>
+
+
 
