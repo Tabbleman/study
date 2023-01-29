@@ -9,7 +9,7 @@
 using namespace std;
 inline void update_catalog(){
     system("echo ````md > ../catalog.md");
-    system("tree -d ../. >> ../catalog.md");
+    system("tree -d -I 'algorithm|acwing|' ../. >> ../catalog.md");
     system("echo  ```` >> ../catalog.md");
 }
 inline string get_comment()
