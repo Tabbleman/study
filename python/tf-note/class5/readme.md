@@ -22,7 +22,7 @@ Conv2d(6,5,padding="valid",activation='relu'),
 MaxPool2D(2,2),
 Conv2d(6,(3,2),padding="valid",activation='sigmoid'),
 MaxPool2D(2,(2,2)),
-Conv2d(filter=6,kernal_size=(3,2),padding="valid",activation='sigmoid'),
+Conv2d(filter=6,kernel_size=(3,2),padding="valid",activation='sigmoid'),
 MaxPool2D(pool_size=(2,2),strides=2),
 
 Flatten(),
@@ -161,10 +161,44 @@ LeNet
 
 ![alt](../../../images/LeNet.png)
 
-第一层 | 第二层 | 第三层
----|---|---
-test | test2 | test3
+第一层  | 第二层 
+---     |---
+6    | test2
 
+```python
+#代码部分
+class LeNet5(Model):
+    def __init__(self):
+        super(Lenet5, self).__init__()
+
+        self.c1=Conv2D(
+            filters=6,
+            kernel_size=(5,5),
+            activation='relu'
+        )
+        self.p1=MaxPool2d(
+            pool_size=(2,2),
+            strides=2
+        )
+
+        self.c2=Conv2D(
+            filter=16,
+            kernel_size=(5,5),
+            activation='sigmoid',
+        )
+
+        self.p2=MaxPool2D(
+            pool_size=(2,2),
+            strides=2
+        )
+
+        self.flatten=Flatten()
+        self.f1=Dense(120, activation='sigmoid')
+        self.f2=Dense(84, activation='sigmoid')
+        self.f3=Dense(10, activation='softmax')
+
+
+```
 </details>
 
 

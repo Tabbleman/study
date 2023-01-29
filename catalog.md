@@ -71,7 +71,8 @@
 |   |-- codeforce
 |   |-- leetcode
 |   |   `-- contest
-|   |       `-- biweekly-96
+|   |       |-- biweekly-96
+|   |       `-- weekly-330
 |   |-- moocgw
 |   `-- zoj
 |       `-- pat
@@ -112,5 +113,5 @@
     |-- git
     `-- latex
 
-111 directories
+112 directories
  ```` 
