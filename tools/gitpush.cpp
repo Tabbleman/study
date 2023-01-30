@@ -40,7 +40,11 @@ inline void gitpush(){
 int main(int argc, char **argv)
 {
     cin.tie(0);
-    gitpush();
-
+    try{
+        gitpush();
+    }catch(std::exception& ec){
+        cout << ec.what() << endl;
+    }
+    
     return 0;
 }
