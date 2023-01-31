@@ -9,7 +9,7 @@
 using namespace std;
 inline void update_catalog(){
     system("echo ````md > ../catalog.md");
-    system("tree -d ../. >> ../catalog.md");
+    system("tree -d -I acwing ../. >> ../catalog.md");
     system("echo  ```` >> ../catalog.md");
 }
 inline string get_comment()
@@ -31,7 +31,7 @@ inline void gitpush(){
     system("git add ../. ");
     printf("input comment(less than 10010 char):\n");
     comment = get_comment();
-    if(comment[0] == 'n')comment = default_comment;
+    if(comment[0] == 'n' && comment.size() == 1)comment = default_comment;
     sprintf(buffer, "git commit -m \"%s\" ", comment.c_str());
     // printf("%s\n", buffer);
     system(buffer);
@@ -40,7 +40,11 @@ inline void gitpush(){
 int main(int argc, char **argv)
 {
     cin.tie(0);
-    gitpush();
-
+    try{
+        gitpush();
+    }catch(std::exception& ec){
+        cout << ec.what() << endl;
+    }
+    
     return 0;
 }
