@@ -41,6 +41,7 @@
 |   |-- django
 |   |-- dm
 |   |-- opengl
+|   |-- sqlite
 |   `-- tf-note
 |       |-- class1
 |       |-- class2
@@ -56,5 +57,5 @@
     |-- git
     `-- latex
 
-55 directories
+56 directories
  ```` 
