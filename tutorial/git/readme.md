@@ -40,3 +40,19 @@ how to fork a branch?
 [Citation](https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/)
 
 </details>
+
+
+<details>
+<summary>
+
+#### git ask your username and password every time? Don't worry, click me!
+
+</summary>
+
+```sh
+
+git config --global credential.helper store
+# this command will store your usrname and pwd<3
+```
+
+</details>
