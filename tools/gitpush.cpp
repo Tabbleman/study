@@ -23,6 +23,7 @@ inline string get_comment()
     return tmp;
 }
 
+
 inline void gitpush(){
     string comment, default_comment = "auto push";
     char buffer[10010], add_comment;
