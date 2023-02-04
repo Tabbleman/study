@@ -26,7 +26,10 @@ include_directories(${Boost_INCLUDE_DIR})
 add_executable(main main.cpp)
 
 target_link_libraries(  main 
-                        ${Boost_LIBRARIES} pthread)
+                        ${Boost_LIBRARIES} 
+                        pthread
+                        # Boost::<missed components>
+                        )
 
 
 ```
