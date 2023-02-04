@@ -56,3 +56,18 @@ git config --global credential.helper store
 ```
 
 </details>
+
+<details>
+<summary>
+
+#### how to use git switch branches?
+
+</summary>
+
+create and switch a new branch
+> git checkout -b <your branch>
+check out current branch
+> git branch 
+
+</details>
+
