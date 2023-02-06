@@ -1,4 +1,3 @@
-md
 ../.
 ├── 408
 │   ├── cc
@@ -59,4 +58,3 @@ md
     └── latex
 
 57 directories
-

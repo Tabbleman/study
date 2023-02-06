@@ -8,9 +8,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 inline void update_catalog(){
-    system("echo ````md > ../catalog.md");
+    system("echo st > ../catalog");
     system("tree -d -I acwing ../. >> ../catalog.md");
-    system("echo  ```` >> ../catalog.md");
+    system("echo ed >> ../catalog");
 }
 inline string get_comment()
 {
