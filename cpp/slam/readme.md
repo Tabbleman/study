@@ -156,6 +156,17 @@ $ x_n = f(x_{n-1},u_n,w_n)$[^1]
 
 </details>
 <!--======================-->
+
+<details>
+<summary>
+
+math part
+
+</summary>
+
+
+
+
 <details>
 <summary>
 
@@ -202,18 +213,16 @@ ch6
 
 </details>
 
-<!--  -->
+</details>
+
+<!-------------->
 
 <details>
 <summary>
 
-shijian
+practice
 
 </summary>
-
-
-
-
 
 <details name="ch7">
 <summary>
