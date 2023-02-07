@@ -32,7 +32,7 @@ inline void gitpush(){
     system("git add ../. ");
     printf("input comment(less than 10010 char):\n");
     comment = get_comment();
-    if(comment[0] == 'n' || comment.size() == 1)comment = default_comment;
+    if(comment[0] == 'n' || comment.size() <= 1)comment = default_comment;
     sprintf(buffer, "git commit -m \"%s\" ", comment.c_str());
     // printf("%s\n", buffer);
     system(buffer);
