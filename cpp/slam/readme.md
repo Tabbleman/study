@@ -199,6 +199,16 @@ ch5
 
 </summary>
 
+> 本讲将要介绍相机模型， 以及opencv如何处理图像的一些基本操作。
+
+<details>
+<summary>
+针孔相机模型
+</summary>
+
+
+</details>
+
 
 </details>
 
