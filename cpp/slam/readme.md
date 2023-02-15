@@ -203,8 +203,16 @@ ch5
 
 <details>
 <summary>
+
 针孔相机模型
+
 </summary>
+
+![cameraModel](../../images/cameraModel.png)
+如图，根据其中的几何关系可以得出：
+
+$$\frac{Z}{f} = -\frac{X}{X^{'}} = \frac{Y}{Y^{'}}$$
+
 
 
 </details>
