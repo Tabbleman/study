@@ -17,6 +17,7 @@ st
 │       └── pat
 │           ├── advance
 │           └── basic
+├── config
 ├── cpp
 │   ├── computer-graphics
 │   ├── gd
@@ -58,5 +59,5 @@ st
     ├── git
     └── latex
 
-57 directories
+58 directories
 ed
